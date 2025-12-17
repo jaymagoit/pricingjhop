@@ -13,13 +13,20 @@
 
             table tr td,
             table tr th {
-                white-space: nowrap;
                 padding: 0.5rem !important;
+                white-space: nowrap;
+            }
+
+            @media (max-width: 768px) {
+                table tr td,
+                table tr th {
+                    font-size: 12px !important;
+                }
             }
         </style>
     </head>
     <body>
-        <div class="container py-3">
+        <div class="container-fluid py-3">
             <div class="row g-2 align-items-center mb-2">
                 <div class="col-12 col-md-6">
                     <label for="tableSearch" class="form-label mb-1">Search</label>
@@ -35,7 +42,6 @@
                             <th>Receipt No.</th>
                             <th>Category</th>
                             <th>Brand</th>
-                            <th>Product Type</th>
                             <th>Addtl Description</th>
                             <th>Full Description</th>
                             <th>Total Qty</th>
